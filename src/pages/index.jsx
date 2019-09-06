@@ -195,7 +195,7 @@ const Index = () => (
           <BigTitle>
             Hi, <br /> I'm Farzaan Kaiyom.
           </BigTitle>
-          <Subtitle>I'm a student at Stanford University studying computer science. Some of my technical projects can be found below. </Subtitle>
+          <Subtitle>I'm a computer science student at Stanford passionate about the social impact of tech. Some of my projects can be found below. </Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -291,11 +291,11 @@ const Index = () => (
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
-              My interests include philosophy, computer science, and their intersection.
+              I've always been in awe of the great impact of technology on people (both positive and negative). I'm interested in mitigating the negative effects, and using technology to solve societal problems. 
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            Some of my work highlights this.
+            For example, as the social chair of Stanford Code the Change I lead a community of likeminded engineers in making the world a better place. One project I'm proud of is the Konexio interact platform, a matching platform for a non-profit in France that connects refugees to mentors. 
           </AboutDesc>
         </Inner>
       </Content>
@@ -319,7 +319,7 @@ const Index = () => (
         <Inner>
           <ContactTitle>Contact Me</ContactTitle>
           <ContactText>
-            <a href="mailto:fkaiyom@gmail.com">Email me</a> or find me on other platforms:{' '}
+            <a href="mailto:fkaiyom@gmail.com">If you're interested in my work or want to chat, email me</a> or find me on other platforms:{' '}
             <a href="https://www.instagram.com/farzaank/">Instagram </a> &{' '}
             <a href="https://farzaank.com/debate.html">Calendy (for debate coaching)</a>
           </ContactText>
