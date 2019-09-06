@@ -12,6 +12,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
+import star from '../images/star.svg'
 import avatar from '../images/avatar.jpg';
 import '../styles/global';
 
@@ -26,6 +27,10 @@ const Divider = styled(ParallaxLayer)`
 `;
 
 const DividerMiddle = styled(Divider)`
+  clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
+`;
+
+const DividerTop = styled(Divider)`
   clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
 `;
 
@@ -47,13 +52,13 @@ const BigTitle = styled.h1`
 `;
 
 const Title = styled.h1`
-  ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block')};
+  ${tw('text-4xl lg:text-4xl font-serif text-black mb-8 tracking-wide relative inline-block')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   &:before {
     content: '';
     width: 40px;
     height: 40px;
-    background: url(${triangle});
+    background: url(${star});
     position: absolute;
     background-size: 40px;
     animation: ${rotate} 4s linear infinite;
@@ -119,7 +124,7 @@ const Avatar = styled.img`
 `;
 
 const AboutSub = styled.span`
-  ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
+  ${tw('text-black pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
 `;
 
 const AboutDesc = styled.p`
@@ -147,9 +152,18 @@ const Index = () => (
   <React.Fragment>
     <SEO />
     <Parallax pages={5}>
+     <DividerMiddle
+        bg="linear-gradient(to right, SlateBlue 100%, DeepSkyBlue 0%)"
+        speed={-.1}
+        offset={-1.5}
+        factor={1.8}
+      />
       <Divider speed={0.2} offset={0}>
+        
+          {/* 
         <UpDown>
           <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
+          <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
           <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
           <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
         </UpDown>
@@ -173,6 +187,8 @@ const Index = () => (
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="40%" top="30%" />
         <SVG icon="hexa" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
+        
+          */}
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
@@ -184,11 +200,11 @@ const Index = () => (
       </Content>
       <DividerMiddle
         bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
-        speed={-0.2}
-        offset={1.1}
-        factor={1.75}
+        speed={-.1}
+        offset={0.5}
+        factor={1.8}
       />
-      <Content speed={0.4} offset={1.2} factor={2}>
+      <Content speed={0.4} offset={0.8} factor={2}>
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
@@ -223,7 +239,10 @@ const Index = () => (
           </ProjectsWrapper>
         </Inner>
       </Content>
-      <Divider speed={0.1} offset={1} factor={2}>
+      
+      <Divider speed={0.1} offset={0.8} factor={2}>
+        
+        {/*
         <UpDown>
           <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
           <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
@@ -264,8 +283,9 @@ const Index = () => (
         <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
+        */}
       </Divider>
-      <Content speed={0.4} offset={3}>
+      <Content speed={0.4} offset={2.6}>
         <Inner>
           <Title>About</Title>
           <AboutHero>
@@ -306,6 +326,7 @@ const Index = () => (
         </Inner>
       </Content>
       <Divider speed={0.1} offset={4}>
+        {/*
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
@@ -319,6 +340,7 @@ const Index = () => (
         <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
+        */}
       </Divider>
     </Parallax>
   </React.Fragment>
