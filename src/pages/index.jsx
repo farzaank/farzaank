@@ -31,7 +31,7 @@ const DividerMiddle = styled(Divider)`
 `;
 
 const DividerTop = styled(Divider)`
-  clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
+  clip-path: polygon(0 35%, 100% 25%, 100% 65%, 0 75%);
 `;
 
 const Content = styled(ParallaxLayer)`
@@ -239,7 +239,12 @@ const Index = () => (
           </ProjectsWrapper>
         </Inner>
       </Content>
-      
+      <DividerTop
+        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+        speed={-.1}
+        offset={2}
+        factor={2}
+      />
       <Divider speed={0.1} offset={0.8} factor={2}>
         
         {/*
@@ -285,7 +290,7 @@ const Index = () => (
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
         */}
       </Divider>
-      <Content speed={0.4} offset={2.6}>
+      <Content speed={0.4} offset={2.8}>
         <Inner>
           <Title>About</Title>
           <AboutHero>
@@ -299,22 +304,13 @@ const Index = () => (
           </AboutDesc>
         </Inner>
       </Content>
-      <Divider fill="#23262b" speed={0.2} offset={4}>
-        <WaveWrapper>
-          <InnerWave>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
-              <path className={waveAnimation}>
-                <animate
-                  attributeName="d"
-                  values="M 0 100 Q 250 50 400 200 Q 550 350 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 200 150 400 200 Q 600 250 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z"
-                  repeatCount="indefinite"
-                  dur="30s"
-                />
-              </path>
-            </svg>
-          </InnerWave>
-        </WaveWrapper>
-      </Divider>
+      <DividerMiddle
+        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+        speed={-.1}
+        offset={4}
+        factor={1}
+      />
+      
       <Content speed={0.4} offset={4}>
         <Inner>
           <ContactTitle>Contact Me</ContactTitle>
