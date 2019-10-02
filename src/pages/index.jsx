@@ -162,6 +162,7 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
+          <Avatar src={avatar} alt="Farzaan Kaiyom" />
           <BigTitle>
             Hi, <br /> I'm Farzaan Kaiyom.
           </BigTitle>
