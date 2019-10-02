@@ -174,7 +174,7 @@ const Index = () => (
         offset={0.5}
         factor={1.8}
       />
-      <Content speed={0.4} offset={1} factor={2}>
+      <Content speed={0.4} offset={0.95} factor={2}>
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
@@ -235,7 +235,7 @@ const Index = () => (
         <Inner>
           <Title>About</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            <Avatar src={avatar} alt="Farzaan Kaiyom" />
             <AboutSub>
               I've always been in awe of the great impact of technology on people (both positive and negative). I'm interested in mitigating the negative effects, and using technology to solve societal problems. 
             </AboutSub>
