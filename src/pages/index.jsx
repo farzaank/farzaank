@@ -134,7 +134,7 @@ const AboutDesc = styled.p`
 const ContactText = styled.p`
   ${tw('text-black font-sans text-xl md:text-2xl lg:text-3xl')};
   a {
-    color: #e07628;
+    color: #001154;
     text-decoration: none;
   }
 `;
@@ -178,6 +178,20 @@ const Index = () => (
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
+          <ProjectCard
+              title="Konexio Interact Platform "
+              link="https://codethechange.github.io/codethechange.konexio-mern-stack/"
+              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+            >
+              Konexio Interact is a web app that matches low income individuals to mentors in France. I led a team of volunteers developing it through Code the Change.
+            </ProjectCard>
+            <ProjectCard
+              title="BioSNAP Knowledge Graph"
+              link="https://github.com/snap-stanford/miner-data"
+              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+            >
+              BioSNAP is the largest biomedical knowledge graph with detailed edges and nodes to date. I made it during my summer internship doing research at Stanford. The scripts are found here, the graph is to be released soon.
+            </ProjectCard>
             <ProjectCard
               title="DecentraLibrary"
               link="https://github.com/farzaank/DecentraLibrary"
@@ -204,7 +218,7 @@ const Index = () => (
               link="http://github.com/farzaank/farzaank"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
-              The code for this website.
+              The code for this website built using GatsbyJS boilerplate code.
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
