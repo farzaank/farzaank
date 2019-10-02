@@ -174,7 +174,7 @@ const Index = () => (
         offset={0.5}
         factor={1.8}
       />
-      <Content speed={0.4} offset={1.2} factor={2}>
+      <Content speed={0.4} offset={1} factor={2}>
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
