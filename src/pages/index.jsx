@@ -165,7 +165,7 @@ const Index = () => (
           <BigTitle>
             Hi, <br /> I'm Farzaan Kaiyom.
           </BigTitle>
-          <Subtitle>I'm a computer science student at Stanford passionate about the social impact of tech. Some of my projects can be found below. </Subtitle>
+          <Subtitle>I'm a computer science student and research assitant at Stanford interested in network science, machine learning, and their real world applications. Some of my projects can be found below. </Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -190,7 +190,7 @@ const Index = () => (
               link="https://github.com/snap-stanford/miner-data"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              BioSNAP is the largest biomedical knowledge graph with detailed edges and nodes to date. I made it during my summer internship doing research at Stanford. The scripts are found here, the graph is to be released soon.
+              BioSNAP is the largest biomedical knowledge graph with detailed edges and nodes to date. I made it during my summer internship doing research at Stanford. I've made compilation scripts as well as sample machine learning tasks using the graph publicly available.
             </ProjectCard>
             <ProjectCard
               title="DecentraLibrary"
@@ -211,7 +211,7 @@ const Index = () => (
               link="http://demonstrations.wolfram.com/ComparingTheRegionsOfPolarAndCartesianGraphs/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-              This was a project for Advanced Topics in Mathematics II, 2017–2018, Torrey Pines High School, San Diego, CA.
+              A tool I published to help visualize calculus concepts using Wolfram Mathematica.
             </ProjectCard>
             <ProjectCard
               title="This Website"
@@ -241,7 +241,7 @@ const Index = () => (
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            For example, as the social chair of Stanford Code the Change I lead a community of likeminded engineers in making the world a better place. One project I'm proud of is the Konexio interact platform, a matching platform for a non-profit in France that connects refugees to mentors. 
+            For example, as the social chair of Stanford Code the Change I led a community of likeminded engineers in making the world a better place. One project from there that I'm proud of is the Konexio interact platform, a matching platform for a non-profit in France that connects refugees to mentors. 
           </AboutDesc>
         </Inner>
       </Content>
