@@ -151,7 +151,7 @@ const Footer = styled.footer`
 const Index = () => (
   <React.Fragment>
     <SEO />
-    <Parallax pages={5}>
+    <Parallax pages={1.9}>
      <DividerMiddle
         bg="linear-gradient(to right, SlateBlue 100%, DeepSkyBlue 0%)"
         speed={-.1}
@@ -165,7 +165,7 @@ const Index = () => (
           <BigTitle>
             Hi, <br /> I'm Farzaan Kaiyom.
           </BigTitle>
-          <Subtitle>I'm a computer science student and research assitant at Stanford interested in network science, machine learning, and their real world applications. Some of my projects can be found below. </Subtitle>
+          <Subtitle>I studied computer science at Stanford and have found an interest in machine learning through research at IBM and Stanford. I'm currently focused on building <a href="https://gradiahealth.com">Gradia Health.</a></Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -174,95 +174,26 @@ const Index = () => (
         offset={0.5}
         factor={1.8}
       />
-      <Content speed={0.4} offset={0.95} factor={2}>
-        <Inner>
-          <Title>Projects</Title>
-          <ProjectsWrapper>
-          <ProjectCard
-              title="Konexio Interact Platform "
-              link="https://codethechange.github.io/codethechange.konexio-mern-stack/"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-            >
-              Konexio Interact is a web app that matches low income individuals to mentors in France. I led a team of volunteers developing it through Code the Change.
-            </ProjectCard>
-            <ProjectCard
-              title="BioSNAP Knowledge Graph"
-              link="https://github.com/snap-stanford/miner-data"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-            >
-              BioSNAP is the largest biomedical knowledge graph with detailed edges and nodes to date. I made it during my summer internship doing research at Stanford. I've made compilation scripts as well as sample machine learning tasks using the graph publicly available.
-            </ProjectCard>
-            <ProjectCard
-              title="DecentraLibrary"
-              link="https://github.com/farzaank/DecentraLibrary"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-            >
-              DecentraLibrary is a blockchain based app that uses Ethereum technology to create a secure and fast ledger of books in a library.
-            </ProjectCard>
-            <ProjectCard
-              title="Math Royale"
-              link="https://github.com/farzaank/MathRoyale"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-            >
-              Math Royale is an Android game created by Farzaan Kaiyom and William La
-            </ProjectCard>
-            <ProjectCard
-              title="Wolfram Demonstration Project"
-              link="http://demonstrations.wolfram.com/ComparingTheRegionsOfPolarAndCartesianGraphs/"
-              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-            >
-              A tool I published to help visualize calculus concepts using Wolfram Mathematica.
-            </ProjectCard>
-            <ProjectCard
-              title="This Website"
-              link="http://github.com/farzaank/farzaank"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-            >
-              The code for this website built using GatsbyJS boilerplate code.
-            </ProjectCard>
-          </ProjectsWrapper>
-        </Inner>
-      </Content>
-      <DividerTop
-        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
-        speed={-.1}
-        offset={2}
-        factor={2}
-      />
+       
+      
       <Divider speed={0.1} offset={0.8} factor={2}>
       </Divider>
-      <Content speed={0.4} offset={2.8}>
-        <Inner>
-          <Title>About</Title>
-          <AboutHero>
-            <Avatar src={avatar} alt="Farzaan Kaiyom" />
-            <AboutSub>
-              I've always been in awe of the great impact of technology on people (both positive and negative). I'm interested in mitigating the negative effects, and using technology to solve societal problems. 
-            </AboutSub>
-          </AboutHero>
-          <AboutDesc>
-            For example, as the social chair of Stanford Code the Change I led a community of likeminded engineers in making the world a better place. One project from there that I'm proud of is the Konexio interact platform, a matching platform for a non-profit in France that connects refugees to mentors. 
-          </AboutDesc>
-        </Inner>
-      </Content>
       <DividerMiddle
         bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
         speed={-.1}
         offset={4}
-        factor={1}
+        factor={10}
       />
       
-      <Content speed={0.4} offset={4}>
+      <Content speed={0.4} offset={1}>
         <Inner>
-          <ContactTitle>Contact Me</ContactTitle>
+          <ContactTitle>Contact Info</ContactTitle>
           <ContactText>
-            <a href="mailto:fkaiyom@gmail.com">If you're interested in my work or want to chat, email me</a> or find me on other platforms:{' '}
-            <a href="https://www.instagram.com/farzaank/">Instagram </a> &{' '}
-            <a href="https://farzaank.com/debate.html">Calendy (for debate coaching)</a>
+            If you're interested in my work or want to chat, <a href="mailto:farzaan@gradiahealth.com">email me (farzaan@gradiahealth.com)</a> 
           </ContactText>
         </Inner>
       </Content>
-      <Divider speed={0.1} offset={4}>
+      <Divider speed={0.1} offset={1}>
       </Divider>
     </Parallax>
   </React.Fragment>
