@@ -165,7 +165,7 @@ const Index = () => (
           <BigTitle>
             Hi, <br /> I'm Farzaan Kaiyom.
           </BigTitle>
-          <Subtitle>I studied computer science at Stanford and have found an interest in machine learning through research at IBM and Stanford. I'm currently focused on building <a href="https://gradiahealth.com">Gradia Health.</a></Subtitle>
+          <Subtitle> I'm currently focused on building <a href="https://gradiahealth.com">Gradia Health.</a>. I studied computer science at Stanford and have found an interest in machine learning through research at IBM and Stanford. </Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
